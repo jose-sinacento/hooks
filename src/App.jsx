@@ -12,7 +12,10 @@ function App() {
     <>
       <h2>Personaje Pokemon</h2>
         {loadingPok ? (<p>Loading...</p>) : (
-          <Pokemon name={characterPoke.name} image={characterPoke.sprites} />
+          <>
+            <p>{characterPoke.name}</p>
+            <img src={characterPoke.sprites.other.dream_world.front_default} />
+        </>
         )}
     
       <h2>Personaje Rick and Morty</h2>
